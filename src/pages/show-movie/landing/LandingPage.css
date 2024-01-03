@@ -1,0 +1,46 @@
+/* LandingPage.css */
+
+/* Gaya untuk tombol "More Movies" */
+button {
+  margin-top: 20px; 
+  margin-bottom: 40px; 
+  background-color: rgb(37, 37, 40); /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 20px; /* Padding untuk memberikan ruang di sekitar teks tombol */
+  border: none; /* Hilangkan border pada tombol */
+  cursor: pointer; /* Ubah kursor saat dihover untuk menunjukkan itu dapat diklik */
+  border-radius: 4px; /* Membuat sudut melengkung pada tombol */
+}
+
+.landing-page {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .navbar {
+    background-color: #201e1e; /* Warna latar belakang navbar */
+    color: #fff; /* Warna teks navbar */
+    padding: 10px; /* Ruang padding pada navbar */
+    text-align: center;
+    border-bottom: 2px solid rgb(47, 45, 45);
+    margin-bottom: 40px;
+  }
+  
+  .navbar h1 {
+    font-size: 24px; /* Ukuran font teks pada navbar */
+    margin: 0; /* Menghapus margin default */
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

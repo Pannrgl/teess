@@ -1,0 +1,28 @@
+.link-container {
+  margin-top: 20px;
+}
+
+.link-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link-container textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.link-container button {
+  margin-top: 5px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link-container button:hover {
+  background-color: #0056b3;
+}

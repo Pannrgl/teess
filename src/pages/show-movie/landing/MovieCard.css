@@ -1,0 +1,66 @@
+/* MovieCard.css */
+
+/* Gaya untuk teks "Watch Now" dengan kotak warna biru */
+.card a {
+  color: rgb(255, 255, 255); /* Warna teks */
+  background-color: rgb(34, 53, 227); /* Warna latar belakang */
+  padding: 8px 16px; /* Padding untuk memberikan ruang di sekitar teks */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  border-radius: 4px; /* Membuat sudut melengkung pada kotak */
+  display: inline-block; /* Membuat kotak mengelilingi teks */
+}
+
+.movie-card {
+  margin: 5px;
+  padding: 6px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-details {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-details h2 {
+  margin-bottom: 5px;
+  flex-grow: 1;
+}
+
+.movie-details p {
+  margin: 0; /* Reset margin to remove default spacing */
+}
+
+.movie-details a {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #000000; /* Change text color for better visibility */
+  text-decoration: none;
+  border-radius: 3px;
+  align-self: center; /* Center the "Watch Now" link */
+}
+
+/* Tambahkan gaya untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+  .movie-card {
+    width: 48%; /* Atur lebar untuk dua gambar bersebelahan */
+    margin: 1%; /* Berikan sedikit margin */
+  }
+
+  .movie-details {
+    font-size: 14px; /* Adjust font size for better readability on small screens */
+  }
+
+  .movie-details h2 {
+    font-size: 16px; /* Adjust font size for better readability on small screens */
+  }
+}

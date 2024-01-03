@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src", "../landinge/signin/SignIn.js"]
+}

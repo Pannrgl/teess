@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201e1e;
+  color: #fff;
+  padding: 1rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 20px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.search button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #555;
+  color: #fff;
+  border: none;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    order: -1; /* Menempatkan tombol hamburger ke kiri */
+  }
+
+  /* ... (kode lainnya tetap sama) */
+}
+
+
+
+
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #201e1e
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+  }
+}
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    order: -1; /* Menempatkan tombol hamburger ke kiri */
+    position: absolute; /* Menetapkan posisi absolut */
+    left: 10px; /* Menetapkan jarak dari kiri */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #201e1e;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+  }
+}
